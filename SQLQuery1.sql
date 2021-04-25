@@ -45,7 +45,6 @@ INSERT INTO employee VALUES(
 
 
 
-
 --select specific data from the database
 SELECT e_age FROM employee;
 SELECT e_name, e_gender FROM employee;
@@ -135,3 +134,12 @@ SELECT e_dept, avg(e_salary) as avg_salary
 FROM employee
 GROUP BY e_dept
 HAVING avg(e_salary) >100000
+
+
+--Update data/ modify
+UPDATE employee SET e_age=42 WHERE e_name='Sam';
+UPDATE employee SET e_dept='Tech' WHERE e_gender='Female';
+SELECT * FROM employee;		--see modified table
+UPDATE employee SET e_salary=50000;
+
+
