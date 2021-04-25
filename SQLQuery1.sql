@@ -79,3 +79,17 @@ SELECT * FROM employee WHERE NOT e_gender='Female';
 SELECT * FROM employee WHERE e_age LIKE '3_';
 --BETWEEN operator
 SELECT * FROM employee WHERE e_age BETWEEN 25 AND 30;
+
+
+
+--functions
+--min()
+SELECT min(e_age) FROM employee;
+--max()
+SELECT max(e_salary) FROM employee;
+--count()
+SELECT count(*) FROM employee WHERE e_gender='Male';
+--sum()
+SELECT sum(e_salary) FROM employee;
+--avg()
+SELECT avg(e_age) FROM employee;
