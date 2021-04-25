@@ -64,4 +64,18 @@ SELECT DISTINCT e_gender FROM employee
 --Clause Syntax/Filter
 SELECT * from employee WHERE e_gender='Female';
 SELECT * from employee WHERE e_age<30;
-SELECT * from employee WHERE e_salary>100000;
+SELECT * from employee WHERE e_salary>100000; 
+
+
+ 
+--AND operator
+SELECT * from employee WHERE e_gender='Male' AND e_age<30;
+SELECT * from employee WHERE e_dept='Operations' AND e_salary>100000;
+--OR operator
+SELECT * from employee WHERE e_dept='Operations' OR e_dept='Analytics';
+--NOT operator
+SELECT * FROM employee WHERE NOT e_gender='Female';
+--LIKE operator
+SELECT * FROM employee WHERE e_age LIKE '3_';
+--BETWEEN operator
+SELECT * FROM employee WHERE e_age BETWEEN 25 AND 30;
