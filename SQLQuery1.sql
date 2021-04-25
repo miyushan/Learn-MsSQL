@@ -143,3 +143,12 @@ SELECT * FROM employee;		--see modified table
 UPDATE employee SET e_salary=50000;
 
 
+--Delete records
+DELETE FROM employee WHERE e_age=33;
+DELETE FROM employee WHERE e_name='Sam';
+SELECT * FROM employee;		--see modified table
+
+
+--Truncate data/ Delete all data in a table
+TRUNCATE TABLE employee; 
+SELECT * FROM employee;		--see modified table
