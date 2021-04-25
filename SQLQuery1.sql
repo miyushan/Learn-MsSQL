@@ -20,7 +20,7 @@ CREATE TABLE employee(
 	e_dept VARCHAR(20),
 	PRIMARY KEY(e_id)
 );
-
+DROP TABLE employee;		--to delete the table
 
 
 --enter data to the table
@@ -42,6 +42,27 @@ INSERT INTO employee VALUES(
 INSERT INTO employee VALUES(
 	6,'Jeff',112000,27,'Male','Operations'
 );
+SELECT * FROM employee;
+
+
+
+--create a new tabe with its data
+CREATE TABLE department(
+	d_id INT,
+	d_name VARCHAR(20),
+	d_location VARCHAR(20),
+	PRIMARY KEY(d_id)
+);
+
+SELECT * FROM department;
+
+INSERT INTO department VALUES(1,'Content','New York'),
+(2,'Support','Chicago'),
+(3,'Analytics','New York'),
+(4,'Sales','Boston'),
+(5,'Tech','Dallas'),
+(6,'France','Chicago');
+
 
 
 
@@ -152,3 +173,10 @@ SELECT * FROM employee;		--see modified table
 --Truncate data/ Delete all data in a table
 TRUNCATE TABLE employee; 
 SELECT * FROM employee;		--see modified table
+
+
+
+--Inner join
+SELECT employee.e_name, employee.e_dept, department.d_name, department.d_location
+FROM employee
+INNER JOIN department ON employee.e_dept=department.d_name;
