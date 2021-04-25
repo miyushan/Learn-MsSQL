@@ -195,3 +195,12 @@ RIGHT JOIN department ON employee.e_dept=department.d_name;
 SELECT employee.e_name, employee.e_dept, department.d_name, department.d_location
 FROM employee
 FULL JOIN department ON employee.e_dept=department.d_name;
+
+
+--Update using join
+UPDATE employee
+SET e_age=e_age+10
+FROM employee
+JOIN department ON employee.e_dept=department.d_name
+WHERE d_location = 'New York'
+SELECT * FROM employee;		--see modified table
