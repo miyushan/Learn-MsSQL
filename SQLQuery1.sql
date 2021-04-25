@@ -46,3 +46,9 @@ INSERT INTO employee VALUES(
 
 
 
+--select specific data from the database
+SELECT e_age FROM employee;
+SELECT e_name, e_gender FROM employee;
+
+--select all data from the database
+SELECT * FROM employee;
