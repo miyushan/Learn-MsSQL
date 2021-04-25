@@ -110,3 +110,11 @@ SELECT REVERSE('this will reverse');
 --substring()
 SELECT 'This will substring';
 SELECT SUBSTRING('This will substring',11,9);
+
+
+
+--order by syntax
+--ascending order
+SELECT * FROM employee ORDER BY e_salary;
+--descending order
+SELECT * FROM employee ORDER BY e_salary DESC;
