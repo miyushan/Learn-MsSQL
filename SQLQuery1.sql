@@ -118,3 +118,11 @@ SELECT SUBSTRING('This will substring',11,9);
 SELECT * FROM employee ORDER BY e_salary;
 --descending order
 SELECT * FROM employee ORDER BY e_salary DESC;
+
+
+--top
+SELECT TOP 3 * FROM employee;
+
+
+--top by ordering
+SELECT TOP 3 * FROM employee ORDER BY e_age DESC;
