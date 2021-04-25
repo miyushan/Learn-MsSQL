@@ -52,3 +52,16 @@ SELECT e_name, e_gender FROM employee;
 
 --select all data from the database
 SELECT * FROM employee;
+
+
+
+--select distinct values in a column
+SELECT DISTINCT e_gender FROM employee
+
+
+
+
+--Clause Syntax/Filter
+SELECT * from employee WHERE e_gender='Female';
+SELECT * from employee WHERE e_age<30;
+SELECT * from employee WHERE e_salary>100000;
