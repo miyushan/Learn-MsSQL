@@ -93,3 +93,20 @@ SELECT count(*) FROM employee WHERE e_gender='Male';
 SELECT sum(e_salary) FROM employee;
 --avg()
 SELECT avg(e_age) FROM employee;
+
+
+--ltrim()	--remove left space
+SELECT '    space';
+SELECT ltrim('    space');
+--lower()
+SELECT 'THIS IS UPPERCASE';
+SELECT lower('THIS IS UPPERCASE');
+--upper()
+SELECT 'this is lowercase';
+SELECT upper('this is lowercase');
+--reverse()
+SELECT 'this will reverse';
+SELECT REVERSE('this will reverse');
+--substring()
+SELECT 'This will substring';
+SELECT SUBSTRING('This will substring',11,9);
