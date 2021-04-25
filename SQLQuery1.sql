@@ -128,3 +128,10 @@ SELECT TOP 3 * FROM employee;
 SELECT TOP 3 * FROM employee ORDER BY e_age DESC;
 
 SELECT avg(e_age), e_dept from employee GROUP BY e_dept ORDER BY avg(e_age) DESC;
+
+
+--having Clause
+SELECT e_dept, avg(e_salary) as avg_salary
+FROM employee
+GROUP BY e_dept
+HAVING avg(e_salary) >100000
