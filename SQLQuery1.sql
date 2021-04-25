@@ -126,3 +126,5 @@ SELECT TOP 3 * FROM employee;
 
 --top by ordering
 SELECT TOP 3 * FROM employee ORDER BY e_age DESC;
+
+SELECT avg(e_age), e_dept from employee GROUP BY e_dept ORDER BY avg(e_age) DESC;
