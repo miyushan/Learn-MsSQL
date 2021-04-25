@@ -180,3 +180,18 @@ SELECT * FROM employee;		--see modified table
 SELECT employee.e_name, employee.e_dept, department.d_name, department.d_location
 FROM employee
 INNER JOIN department ON employee.e_dept=department.d_name;
+
+--Left join
+SELECT employee.e_name, employee.e_dept, department.d_name, department.d_location
+FROM employee
+LEFT JOIN department ON employee.e_dept=department.d_name;
+
+--Right join
+SELECT employee.e_name, employee.e_dept, department.d_name, department.d_location
+FROM employee
+RIGHT JOIN department ON employee.e_dept=department.d_name;
+
+--Full join
+SELECT employee.e_name, employee.e_dept, department.d_name, department.d_location
+FROM employee
+FULL JOIN department ON employee.e_dept=department.d_name;
