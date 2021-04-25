@@ -204,3 +204,11 @@ FROM employee
 JOIN department ON employee.e_dept=department.d_name
 WHERE d_location = 'New York'
 SELECT * FROM employee;		--see modified table
+
+
+--Delete using join
+DELETE employee
+FROM employee
+JOIN department ON employee.e_dept=department.d_name
+WHERE d_location = 'New York';
+SELECT * FROM employee;		--see modified table
